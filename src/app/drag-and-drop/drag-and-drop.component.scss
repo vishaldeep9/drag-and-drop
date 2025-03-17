@@ -1,0 +1,60 @@
+.container {
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(69, 220, 28, 0.822);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.chapter-list {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  min-height: 200px;
+}
+
+.chapter-item {
+  padding: 10px;
+  margin: 8px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: move !important;
+}
+
+.chapter-item:active,
+.chapter-item.cdk-drag-preview {
+  cursor: move !important;
+  /* Maintain grabbing cursor during drag */
+}
+/* Optional: Improves Dragging Feedback */
+.chapter-item.cdk-drag-placeholder {
+  opacity: 0.5;
+  border: 1px dashed #999;
+}
+
+
+
+// .chapter-item:active {
+//   cursor: grabbing;
+// }
+
+.save-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #0056b3;
+}

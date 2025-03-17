@@ -1,0 +1,12 @@
+<button (click)="toggleDrawType()">Toggle Line/Rectangle/Arrow</button>
+<p>Current Mode: {{ drawType }}</p>
+
+<canvas 
+  #myCanvas 
+  width="500" 
+  height="400" 
+  style="border: 1px solid #c3c3c3; cursor: crosshair;"
+  (mousedown)="startDrawing($event)"
+  (mousemove)="previewDrawing($event)"
+  (mouseup)="stopDrawing($event)"
+></canvas>
