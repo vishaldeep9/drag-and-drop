@@ -1,28 +1,27 @@
-ng add @angular/material    ===material ui
+# GymRegistration
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> ===bootstrap
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> ===w3 for icon
+## Development server
 
-npm i ng-angular-popup --force
-npm i ng-confirm-box --force
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-@use "@angular/material" as mat;
+## Code scaffolding
 
-@include mat.core();
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-$my-primary: mat.define-palette(mat.$red-palette, 600);
-$my-accent: mat.define-palette(mat.$amber-palette, A200, A100, A400);
-$my-warn: mat.define-palette(mat.$green-palette, A200, A100, A400);
-$my-theme: mat.define-light-theme(
-  (
-    color: (
-      primary: $my-primary,
-      accent: $my-accent,
-      warn: $my-warn,
-    ),
-    typography: mat.define-typography-config(),
-    density: 0,
-  )
-);
-@include mat.all-component-themes($my-theme);
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
